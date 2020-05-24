@@ -8,3 +8,150 @@ z2
 !i10f 100
 cModel Technology
 dC:/users/Rom Becker/Desktop/sim1/sim1_files
+vfas
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z1 !s110 1590348336
+!i10b 1
+!s100 6o:kEhki<cBK9PoX49K401
+ImCAg@?Ba6:U[^gP7E:BVY1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fas_sv_unit
+S1
+Z3 dC:/Users/ADMIN/Desktop/DigiSysSym1/sim1_files
+w1590348332
+8fas.sv
+Ffas.sv
+L0 2
+Z4 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z5 !s108 1590348336.000000
+!s107 fas.sv|
+!s90 -reportprogress|300|fas.sv|
+!s101 -O0
+!i113 1
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vfas_test
+R0
+R1
+!i10b 1
+!s100 HAMWE8S[VH8B7H8zzZkWE3
+I1kQcDX;?nYYJMAQ9So?:d0
+R2
+!s105 fas_test_sv_unit
+S1
+R3
+w1590347915
+8fas_test.sv
+Ffas_test.sv
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1590348335.000000
+!s107 fas_test.sv|
+!s90 -reportprogress|300|fas_test.sv|
+!s101 -O0
+!i113 1
+R6
+vmux2
+R0
+R1
+!i10b 1
+!s100 djG;nC8HHVKH6Ad?9i=1;1
+I77Qb3`6mgzTOK:W0jB=;S1
+R2
+!s105 mux2_sv_unit
+S1
+R3
+w1590347821
+8mux2.sv
+Fmux2.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 mux2.sv|
+!s90 -reportprogress|300|mux2.sv|
+!s101 -O0
+!i113 1
+R6
+vNOT
+R0
+!s110 1590346394
+!i10b 1
+!s100 j69lJkioMJQP[LPPIYA;83
+I^Rz;40jR>2JXN9C4=^_3h0
+R2
+!s105 NOT_sv_unit
+S1
+R3
+Z7 w1590346215
+8libcells/NOT.sv
+Flibcells/NOT.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1590346393.000000
+!s107 libcells/NOT.sv|
+!s90 -reportprogress|300|libcells/NOT.sv|
+!s101 -O0
+!i113 1
+R6
+n@n@o@t
+vOR2
+R0
+!s110 1590346404
+!i10b 1
+!s100 ]oENmd[f[?Z2VgbM04Vg_3
+IEM0bDnXUa529Nm4JNhl=P3
+R2
+!s105 OR2_sv_unit
+S1
+R3
+R7
+8libcells/OR2.sv
+Flibcells/OR2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1590346404.000000
+!s107 libcells/OR2.sv|
+!s90 -reportprogress|300|libcells/OR2.sv|
+!s101 -O0
+!i113 1
+R6
+n@o@r2
+vXOR2
+R0
+!s110 1590346400
+!i10b 1
+!s100 YVXK0_L;8c?D0NMn>i=5S0
+I3j:feFgZb86YZ7cURokQK0
+R2
+!s105 XOR2_sv_unit
+S1
+R3
+R7
+8libcells/XOR2.sv
+Flibcells/XOR2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1590346400.000000
+!s107 libcells/XOR2.sv|
+!s90 -reportprogress|300|libcells/XOR2.sv|
+!s101 -O0
+!i113 1
+R6
+n@x@o@r2
