@@ -6,6 +6,7 @@ module fas_test;
     // Signal declarations
     // Gate output wires
     logic cout;
+    logic cin;
     logic s;
     logic a_ns;
 
@@ -47,8 +48,9 @@ module fas_test;
 
     // Gate instantiations
     // For this gate we override the default delays with: Tpdlh=5 and Tpdhl=7
-    fas(
+    fas FAS(
         .cout(cout),
+        .cin(cin),
         .a_ns(a_ns),
         .s(s),
         .a(a),
