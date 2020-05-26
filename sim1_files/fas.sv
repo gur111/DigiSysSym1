@@ -8,8 +8,8 @@ module fas (
     output logic cout        // Carry out
 );
     parameter B=10,C=6,D=6,E=3,F=1,G=8;
-    localparam logic g1_out=0, g3_out=0, g4_out=0, g5_out=0, g6_out=0;
-    localparam logic g8_out=0, g9_out=0, g10_out=0, g11_out=0;
+    logic g1_out, g3_out, g4_out, g5_out, g6_out;
+    logic g8_out, g9_out, g10_out, g11_out;
 
     // Sum operation
     XOR2 #(.Tpdlh(F), .Tpdhl(G)) g1 (.Z(g1_out), .A(a), .B(b));

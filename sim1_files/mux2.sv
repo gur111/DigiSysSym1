@@ -9,7 +9,7 @@ module mux2 (
 // Put your code here
 // ------------------
 parameter B = 0, C = 0, D = 0, E = 0, F = 0, G = 0;
-localparam logic g1_out = 0, g2_out = 0, g4_out = 0, g5_out = 0, g6_out = 0, g7_out = 0, g8_out = 0;
+logic g1_out, g2_out, g4_out, g5_out, g6_out, g7_out, g8_out;
 
 OR2 #(.Tpdlh(D), .Tpdhl(E)) g1 (.Z(g1_out), .A(g4_out), .B(sel));
 OR2 #(.Tpdlh(D), .Tpdhl(E)) g2 (.Z(g2_out), .A(g5_out), .B(g6_out));
