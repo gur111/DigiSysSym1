@@ -17,7 +17,7 @@ module fas (
 
     // Cout operation
     XOR2 #(.Tpdlh(F), .Tpdhl(G)) g5 (.Z(g5_out), .A(a), .B(a_ns));
-    NOT #(.Tpdlh(B), .Tpdhl(C)) g10 (.Z(g10_out), .A(cin));
+    NOT #(.Tpdlh(B), .Tpdhl(C)) g10 (.Z(g10_out), .A(b));
     OR2 #(.Tpdlh(D), .Tpdhl(E)) g6 (.Z(g6_out), .A(g10_out), .B(g5_out));
     NOT #(.Tpdlh(B), .Tpdhl(C)) g9 (.Z(g9_out), .A(g6_out));
 
