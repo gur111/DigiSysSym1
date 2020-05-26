@@ -19,6 +19,7 @@ module fas_test;
     initial begin
         a = 1'b0;
         b = 1'b0;
+        cin = 1'b0;
         a_ns=0;
 
         #10;
