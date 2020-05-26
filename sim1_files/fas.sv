@@ -25,7 +25,7 @@ module fas (
     XOR2 #(.Tpdlh(F), .Tpdhl(G)) g4 (.Z(g4_out), .A(g1_out), .B(a_ns));
     NOT #(.Tpdlh(B), .Tpdhl(C)) g8 (.Z(g8_out), .A(cin));
     OR2 #(.Tpdlh(D), .Tpdhl(E)) g3 (.Z(g3_out), .A(g8_out), .B(g4_out));
-    NOT #(.Tpdlh(B), .Tpdhl(C)) g11 (.Z(g11_out), .A(g3));
+    NOT #(.Tpdlh(B), .Tpdhl(C)) g11 (.Z(g11_out), .A(g3_out));
 
     OR2 #(.Tpdlh(D), .Tpdhl(E)) g7 (.Z(cout), .A(g9_out), .B(g11_out));
 
