@@ -12,9 +12,9 @@ module mux4 (
 // ------------------
 parameter B = 10, C = 6, D = 6, E = 3, F = 1, G = 8;
 logic g1_out, g2_out;
-mux2 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) g1 (.Z(g1_out), .sel(sel[1]), .d0(d0), .d1(d1));
-mux2 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) g2 (.Z(g2_out), .sel(sel[0]), .d0(d2), .d1(d3));
-mux2 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) g3 (.Z(z), .sel(sel[1]), .d0(g1_out),  .d1(g2_out));
+mux2 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) g1 (.z(g1_out), .sel(sel[1]), .d0(d0), .d1(d1));
+mux2 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) g2 (.z(g2_out), .sel(sel[0]), .d0(d2), .d1(d3));
+mux2 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) g3 (.z(z), .sel(sel[1]), .d0(g1_out),  .d1(g2_out));
 
 // End of your code
 
