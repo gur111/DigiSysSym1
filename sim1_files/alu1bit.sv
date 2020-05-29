@@ -28,7 +28,7 @@ OR2 #(.Tpdlh(D), .Tpdhl(E)) g2 (.Z(g2_out), .A(a), .B(b));
 XOR2 #(.Tpdlh(F), .Tpdhl(G)) g3 (.Z(g3_out), .A(a), .B(b));
 NOT #(.Tpdlh(B), .Tpdhl(C)) g4 (.Z(g4_out), .A(g2_out));
 mux4 #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) MUX (
-    .Z(s),
+    .z(s),
     .sel(op),
     .d0(g4_out),
     .d1(g3_out),
