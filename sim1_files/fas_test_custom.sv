@@ -16,6 +16,8 @@ module fas_test_custom;
     localparam DELIM_DELAY = 100;
     int last = 0;
 
+    parameter B=10,C=6,D=6,E=3,F=1,G=8;
+
     task wait_a_change();
         @(!cout);
         $display("Cout changed after %0t", ($time)-last);
@@ -70,168 +72,12 @@ module fas_test_custom;
         
         make_cin_changes();
 
-
-        
-        /*
-        // A Changes 0010->0110
-        $display("A Changes 0010->0110 %0t", $time);
-        cin = 1'b0;
-        a = 1'b0;
-        b = 1'b1;
-        a_ns=0;
-
         #MAX_TPD;
-        last = $time;
-        a = 1'b1;
-        wait_a_change();
-
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // A Changes 0011->0111
-        #DELIM_DELAY;
-        $display("A Changes 0011->0111 %0t", $time);
-        cin = 1'b0;
-        a = 1'b0;
-        b = 1'b1;
-        a_ns=1;
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // A Changes 1000->1100
-        #DELIM_DELAY;
-        $display("A Changes 1000->1100 %0t", $time);
-        cin = 1'b1;
-        a = 1'b0;
-        b = 1'b0;
-        a_ns=0;
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // A Changes 1001->1101
-        #DELIM_DELAY;
-        $display("A Changes 1001->1101 %0t", $time);
-        cin = 1'b1;
-        a = 1'b0;
-        b = 1'b0;
-        a_ns=1;
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        a = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // B Changes 1001->1011
-        #DELIM_DELAY;
-        $display("B Changes 1001->1011 %0t", $time);
-        cin = 1'b1;
-        a = 1'b0;
-        b = 1'b0;
-        a_ns=1;
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b0;
-        wait_a_change();
-
-        // B Changes 0101->0111
-        #DELIM_DELAY;
-        $display("B Changes 0101->0111 %0t", $time);
-        cin = 1'b0;
-        a = 1'b1;
-        b = 1'b0;
-        a_ns=1;
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // B Changes 1100->1110
-        #DELIM_DELAY;
-        $display("B Changes 1100->1110 %0t", $time);
-        cin = 1'b1;
-        a = 1'b1;
-        b = 1'b0;
-        a_ns=0;
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // B Changes 0000->0010
-        #DELIM_DELAY;
-        $display("B Changes 0000->0010 %0t", $time);
-        cin = 1'b0;
-        a = 1'b0;
-        b = 1'b0;
-        a_ns=0;
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b1;
-        wait_a_change();
-
-        #MAX_TPD;
-        last = $time;
-        b = 1'b0;
-        wait_a_change();
-        // $stop;
-
-        // END
-        #DELIM_DELAY;
-        */
     end
 
     // Gate instantiations
     // For this gate we override the default delays with: Tpdlh=5 and Tpdhl=7
-    fas FAS(
+    fas #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) FAS(
         .cout(cout),
         .cin(cin),
         .a_ns(a_ns),

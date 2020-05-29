@@ -19,8 +19,9 @@ module alu64bit_test;
         cin = 1'b1;
 
         #2000;
+        cin = 1'b0;
 
-
+        #2000;
     end
 
     alu64bit #(.B(B), .C(C), .D(D), .E(E), .F(F), .G(G)) alu (
